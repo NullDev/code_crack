@@ -34,7 +34,5 @@ export default {
             await writeHeaderToFiles();
         },
     }],
-    base: process.env.MODE === "GH"
-        ? "/code_crack/"
-        : "/",
+    base: "/code_crack/",
 };

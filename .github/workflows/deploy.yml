@@ -23,7 +23,7 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Build project
-        run: MODE=GH npm run start:build
+        run: npm run start:build
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
