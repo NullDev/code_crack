@@ -21,7 +21,7 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Build project
-        run: npm run start:build
+        run: MODE=GH npm run start:build
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
@@ -33,7 +33,7 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/master'
 
     steps:
       - name: Download artifact
