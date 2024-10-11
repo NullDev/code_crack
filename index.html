@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="renderer" content="webkit">
+        <meta name="robots" content="index,follow">
+        <meta http-equiv="Cache-Control" content="no-siteapp">
+        <meta name="google" value="notranslate">
+
+        <title>Code Crack</title>
+        <link rel="icon" type="image/png" href="/favicon.png">
+
+        <meta name="title" content="Code Crack">
+        <meta name="description" content="Crack 3 digit lock code puzzles">
+        <meta name="keywords" content="code, crack, puzzle, lock, 3 digit, nodejs, nulldev, code crack, sets">
+        <meta name="application-name" content="NullDev CMS">
+        <meta name="generator" content="NullDev CMS">
+        <meta name="author" content="NullDev">
+
+        <meta name="twitter:title" content="Code Crack">
+        <meta name="twitter:description" content="Crack 3 digit lock code puzzles">
+
+        <meta property="og:title" content="Code Crack">
+        <meta property="og:description" content="Crack 3 digit lock code puzzles">
+        <meta property="og:site_name" content="Code Crack">
+
+        <!-- // ============================== // -->
+        <!-- // = Copyright (c) 2024 NullDev = // -->
+        <!-- // ============================== // -->
+    </head>
+    <body>
+        <img src="/hero.jpg" alt="Code Crack" style="width: 550px; height: auto;">
+        <h1>Code Crack</h1>
+        <h2>Crack 3 digit lock code puzzles</h2>
+
+        <div class="pin-wrap" id="one-correct-wrong-pos">
+            <div class="pin">
+                <input type="number" maxlength="1" pattern="[0-9]{1}" autofocus>
+                <input type="number" maxlength="1" pattern="[0-9]{1}">
+                <input type="number" maxlength="1" pattern="[0-9]{1}">
+            </div>
+            <h3>One number is correct<br> but wrongly placed</h3>
+        </div>
+
+        <div class="pin-wrap" id="two-correct-wrong-pos">
+            <div class="pin">
+                <input type="number" maxlength="1" pattern="[0-9]{1}" autofocus>
+                <input type="number" maxlength="1" pattern="[0-9]{1}">
+                <input type="number" maxlength="1" pattern="[0-9]{1}">
+            </div>
+            <h3>Two number are correct<br> but wrongly placed</h3>
+        </div>
+
+        <div class="pin-wrap" id="one-correct-right-pos">
+            <div class="pin">
+                <input type="number" maxlength="1" pattern="[0-9]{1}" autofocus>
+                <input type="number" maxlength="1" pattern="[0-9]{1}">
+                <input type="number" maxlength="1" pattern="[0-9]{1}">
+            </div>
+            <h3>One number is correct and<br> well placed</h3>
+        </div>
+
+        <br>
+
+        <div class="pin-wrap" id="one-correct-wrong-pos-2">
+            <div class="pin">
+                <input type="number" maxlength="1" pattern="[0-9]{1}" autofocus>
+                <input type="number" maxlength="1" pattern="[0-9]{1}">
+                <input type="number" maxlength="1" pattern="[0-9]{1}">
+            </div>
+            <h3>One number is correct<br> but wrongly placed</h3>
+        </div>
+
+        <div class="pin-wrap" id="nothing-correct">
+            <div class="pin">
+                <input type="number" maxlength="1" pattern="[0-9]{1}" autofocus>
+                <input type="number" maxlength="1" pattern="[0-9]{1}">
+                <input type="number" maxlength="1" pattern="[0-9]{1}">
+            </div>
+            <h3>Nothing is correct<br>&nbsp;</h3>
+        </div>
+
+        <br>
+
+        <button id="crack">Crack</button>
+
+        <p class="r">Result: <span id="result">XXX</span></p>
+
+        <script type="module" src="./src/js/app.js"></script>
+    </body>
+</html>
