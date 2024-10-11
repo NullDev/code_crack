@@ -1,0 +1,92 @@
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 0;
+    top: 0;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+    h1 {
+        font-size: 24px;
+        margin: 5px 0;
+        padding: 0;
+    }
+    
+    h2 {
+        font-size: 20px;
+        margin: 5px 0;
+        padding: 0;
+    }
+    
+    h3 {
+        font-size: 18px;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+.pin-wrap {
+    border: 1px solid #000;
+    padding: 10px;
+    width: auto;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.pin {
+    input { 
+        border: 1px solid #FFF; 
+        text-align: center; 
+        width: 48px;
+        height: 48px;
+        font-size: 36px; 
+        background-color: #F3F3F3;
+        margin-right: 5px;
+
+        &:focus { 
+            border: 1px solid #000;
+            outline: none;
+        }
+    } 
+}
+
+button#crack {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+
+    &:hover {
+        background-color: #333;
+    }
+}
+
+p.r {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 20px;
+
+    span#result {
+        color: red;
+    }
+}
