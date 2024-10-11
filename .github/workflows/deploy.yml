@@ -44,6 +44,11 @@ jobs:
           name: production-files
           path: ./dist
 
+      - name: Move build files to root
+        run: |
+          shopt -s dotglob
+          mv dist/* .
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
