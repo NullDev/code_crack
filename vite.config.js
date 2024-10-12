@@ -34,5 +34,12 @@ export default {
             await writeHeaderToFiles();
         },
     }],
+    css: {
+        preprocessorOptions: {
+            scss: {
+                api: "modern-compiler",
+            },
+        },
+    },
     base: "/code_crack/",
 };
