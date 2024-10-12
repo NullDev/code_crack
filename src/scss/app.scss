@@ -51,6 +51,23 @@ p.r {
     }
 }
 
+div.footer-inf {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #000;
+
+    a {
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
 @media (max-width: 700px) {
     img.hero-img {
         width: 85% !important;
