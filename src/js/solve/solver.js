@@ -47,13 +47,15 @@ const solver = function(){
         }
     }
 
+    const results = [];
     for (const code of generatedCodes){
         if (Helpers.isValid(code, inputs)){
-            return code.join("");
+            results.push(code.join(""));
         }
     }
-
-    return "";
+    return results.length === 0
+        ? "???"
+        : results.join(", ");
 };
 
 export default solver;
